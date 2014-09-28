@@ -1,0 +1,10 @@
+/x64
+/GLSandbox/x64
+*.sln
+*.vcproj
+*.vcxproj
+*.ipch
+*.sdf
+*.suo
+*.filters
+*.user
