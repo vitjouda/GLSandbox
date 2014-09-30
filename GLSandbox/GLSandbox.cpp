@@ -2,7 +2,15 @@
 //
 
 #include "stdafx.h"
-#include <GLFW/glfw3.h>
+
+class Callback{
+public: 
+	virtual void call() = 0;
+};
+
+void callback(GLFWwindow *, int a, int b, int c, int d){
+	std::cout << a;
+}
 
 int main(void)
 {
@@ -22,6 +30,9 @@ int main(void)
 
 	/* Make the window's context current */
 	glfwMakeContextCurrent(window);
+
+	glfwSetKeyCallback(window, callback);
+
 
 	/* Loop until the user closes the window */
 	while (!glfwWindowShouldClose(window))

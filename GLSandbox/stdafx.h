@@ -9,6 +9,9 @@
 
 #include <stdio.h>
 #include <tchar.h>
+#include <iostream>
+
+#include <GLFW/glfw3.h>
 
 
 
