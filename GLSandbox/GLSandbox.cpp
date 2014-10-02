@@ -1,19 +1,7 @@
-// GLSandbox.cpp : Defines the entry point for the console application.
-//
-
 #include "stdafx.h"
+#include "KeyboardControl.h"
 
-class Callback{
-public: 
-	virtual void call() = 0;
-};
-
-void callback(GLFWwindow *, int a, int b, int c, int d){
-	std::cout << a;
-}
-
-int main(void)
-{
+int main(void) {
 	GLFWwindow* window;
 
 	/* Initialize the library */
@@ -21,9 +9,8 @@ int main(void)
 		return -1;
 
 	/* Create a windowed mode window and its OpenGL context */
-	window = glfwCreateWindow(640, 480, "Hello World", NULL, NULL);
-	if (!window)
-	{
+	window = glfwCreateWindow(640, 480, "OpenGLSandbox", NULL, NULL);
+	if (!window) {
 		glfwTerminate();
 		return -1;
 	}
@@ -31,12 +18,11 @@ int main(void)
 	/* Make the window's context current */
 	glfwMakeContextCurrent(window);
 
-	glfwSetKeyCallback(window, callback);
+	glfwSetKeyCallback(window, &KeyboardControl::keyboardCallback);
 
 
 	/* Loop until the user closes the window */
-	while (!glfwWindowShouldClose(window))
-	{
+	while (!glfwWindowShouldClose(window)) {
 		/* Render here */
 
 		/* Swap front and back buffers */

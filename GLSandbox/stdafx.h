@@ -1,18 +1,10 @@
-// stdafx.h : include file for standard system include files,
-// or project specific include files that are used frequently, but
-// are changed infrequently
-//
-
 #pragma once
-
+//version
 #include "targetver.h"
-
+//standard headers
 #include <stdio.h>
 #include <tchar.h>
 #include <iostream>
-
+#include <string>
+//OpenGL headers
 #include <GLFW/glfw3.h>
-
-
-
-// TODO: reference additional headers your program requires here
