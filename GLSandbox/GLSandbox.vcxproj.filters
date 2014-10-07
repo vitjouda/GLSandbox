@@ -19,12 +19,39 @@
     <Filter Include="Header Files\control">
       <UniqueIdentifier>{6735715c-c2d2-40ec-bca6-339d9a5ae9e5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\renderer">
+      <UniqueIdentifier>{972f1653-405d-4140-aab4-66d59150bcb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\renderer">
+      <UniqueIdentifier>{afef1341-79b1-42a8-b41f-ad3e727d0fa8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\engine">
+      <UniqueIdentifier>{5752b5c5-b6bd-49d5-955f-5d1c69b7ed13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\engine">
+      <UniqueIdentifier>{8e8a77c8-359b-4364-ae15-ca117e89461c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\file">
+      <UniqueIdentifier>{b35c8b5a-7e09-46a9-b602-4c95599c2886}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\file">
+      <UniqueIdentifier>{da03425b-fd2c-436d-a304-050d3d61b722}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{7b76d35a-65a9-4569-84c5-859f9d832621}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\VertexShader">
+      <UniqueIdentifier>{d5cb6bb2-fe5f-4107-b2ea-6d85a6e8587e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\FragmentShader">
+      <UniqueIdentifier>{2920bf7a-2b95-47ac-a3c9-f3a111b1990d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="glsandbox\GLSandbox.cpp">
+    <ClCompile Include="GLSandbox.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="glsandbox\stdafx.cpp">
+    <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="AbstractControl.cpp">
@@ -33,9 +60,27 @@
     <ClCompile Include="KeyboardControl.cpp">
       <Filter>Source Files\control</Filter>
     </ClCompile>
+    <ClCompile Include="Renderer.cpp">
+      <Filter>Source Files\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine.cpp">
+      <Filter>Source Files\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Shader.cpp">
+      <Filter>Source Files\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Object.cpp">
+      <Filter>Source Files\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="File.cpp">
+      <Filter>Source Files\file</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderProgram.cpp">
+      <Filter>Source Files\renderer</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="glsandbox\targetver.h">
+    <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="AbstractControl.h">
@@ -44,8 +89,40 @@
     <ClInclude Include="KeyboardControl.h">
       <Filter>Header Files\control</Filter>
     </ClInclude>
-    <ClInclude Include="glsandbox\stdafx.h">
+    <ClInclude Include="stdafx.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer.h">
+      <Filter>Header Files\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine.h">
+      <Filter>Header Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader.h">
+      <Filter>Header Files\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Object.h">
+      <Filter>Header Files\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicPrimitives.h">
+      <Filter>Header Files\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="File.h">
+      <Filter>Header Files\file</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderProgram.h">
+      <Filter>Header Files\renderer</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="FragmentShader.txt">
+      <Filter>Shaders\FragmentShader</Filter>
+    </Text>
+    <Text Include="VertexShader.txt">
+      <Filter>Shaders\VertexShader</Filter>
+    </Text>
   </ItemGroup>
 </Project>

@@ -1,9 +1,10 @@
 /x64
 /GLSandbox/x64
+/GLSandbox/Debug
+/debug
 *.sln
-*.vcproj
-*.vcxproj
 *.ipch
 *.sdf
 *.suo
 *.user
+*.rc
